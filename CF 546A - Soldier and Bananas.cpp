@@ -34,4 +34,4 @@ int main() {
 		cout<<"0"<<endl;
 	else
 		cout<< sum - n <<endl;
-}
+} 
