@@ -53,9 +53,8 @@ int main() {
 			}
 		printf("Case %d:\n", ++line);
 		for (int i = 0; i < n; i++) {
-			cout << arr[i][0];
-			for (int j = 1; j < n; j++)
-				printf(" %c", arr[i][j]);
+			for (int j = 0; j < n; j++)
+				printf("%c", arr[i][j]);
 			printf("\n");
 		}
 	}
