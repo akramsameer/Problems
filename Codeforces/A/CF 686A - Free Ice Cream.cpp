@@ -20,18 +20,23 @@ void file() {
 	//freopen("out.txt", "w", stdout);
 #endif
 }
-int n , a , b , v ;
-int x , y;
-
+int n , d;
+ll x , cur;
 int main() {
 	file();
-	cin >> a >> b >> n;
-	double ans = OO * 1.0 ;
+	cin >> n >> cur;
 	for(int i = 0 ; i < n ; i++){
-		cin >> x >> y >> v;
-		double d = sqrt(double((x - a) * (x - a) + (y - b) * (y - b)));
-		ans = min(ans , d / (v*1.0));
+		char c ;
+		cin >> c >> x;
+		if(c == '+')
+			cur += x;
+		else{
+			if(cur >= x)
+				cur -= x;
+			else
+				d++;
+		}
 	}
-	printf("%.20lf",ans );
+	cout<< cur << " "<<d<<endl;
 	return 0;
 }
