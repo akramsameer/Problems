@@ -50,7 +50,7 @@ int GCD(int a , int b){
  *
  * look
  * 		a*b = 2^(3+5) * 7^(6+2)
- * 		gcd = 2^min(3 , 5) * 6 ^ min(6 , 2)
+ * 		gcd = 2^min(3 , 5) * 7 ^ min(6 , 2)
  *
  * 		then
  * 			we need to do subtract the minimum of power from the addition of power give us maximum
